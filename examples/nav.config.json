@@ -1,0 +1,76 @@
+{
+  "zh-CN": [
+    {
+      "name": "更新日志",
+      "path": "/changelog"
+    },
+    {
+      "name": "开发指南",
+      "children": [
+        {
+          "path": "/introduction",
+          "name": "介绍"
+        },
+        {
+          "path": "/quickstart",
+          "name": "快速上手"
+        }
+      ]
+    },
+    {
+      "name": "组件",
+      "groups": [
+        {
+          "groupName": "基础组件",
+          "list": [
+            {
+              "path": "/button",
+              "title": "Button 按钮"
+            },
+            {
+              "path": "/picker",
+              "title": "Picker 选择器"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "en-US": [
+    {
+      "name": "Changelog",
+      "path": "/changelog"
+    },
+    {
+      "name": "Development",
+      "children": [
+        {
+          "path": "/introduction",
+          "name": "Introduction"
+        },
+        {
+          "path": "/quickstart",
+          "name": "Quickstart"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "groups": [
+        {
+          "groupName": "Basic",
+          "list": [
+            {
+              "path": "/button",
+              "title": "Button"
+            },
+            {
+              "path": "/picker",
+              "title": "Picker"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

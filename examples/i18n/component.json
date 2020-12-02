@@ -1,0 +1,25 @@
+[{
+    "lang": "zh-CN",
+    "header": {
+      "title": "JEFFERY",
+      "phone": "移动端组件库",
+      "web": "桌面端组件库"
+    },
+    "demo-block": {
+      "hide-text": "隐藏代码",
+      "show-text": "显示代码"
+    }
+  },
+  {
+    "lang": "en-US",
+    "header": {
+      "title": "JEFFERY",
+      "phone": "Phone Component",
+      "web": "Web Component"
+    },
+    "demo-block": {
+      "hide-text": "Hide",
+      "show-text": "Expand"
+    }
+  }
+]

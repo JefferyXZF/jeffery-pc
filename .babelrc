@@ -1,0 +1,16 @@
+{
+  "presets": [["es2015", { "loose": true }]],
+  "plugins": ["transform-vue-jsx"],
+  "env": {
+    "utils": {
+      "plugins": [
+        ["module-resolver", {
+          "root": ["jeffery-components-pc"],
+          "alias": {
+            "jeffery-ui/src": "jeffery-components-pc/lib"
+          }
+        }]
+      ]
+    }
+  }
+}

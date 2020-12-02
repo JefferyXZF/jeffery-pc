@@ -1,0 +1,5 @@
+{
+  "button": "./packages/button/index.js",
+  "row": "./packages/row/index.js",
+  "picker": "./packages/picker/index.js"
+}

@@ -1,2 +1,1 @@
-# jeffery-pc
-基于 Vue3 的PC端组件库
+# jeffery-ui - 基于 Vue 开发的 PC 端组件库
