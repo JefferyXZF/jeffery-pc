@@ -1,3 +1,14 @@
+<style>
+  .demo-box.demo-button {
+    .qw-row {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+</style>
 # Button 按钮
 
 常用的操作按钮。
@@ -9,41 +20,41 @@
 :::demo 使用`type`、`plain`、`round`和`circle`属性来定义 Button 的样式。
 
 ```html
-<jy-row>
-  <jy-button>默认按钮</jy-button>
-  <jy-button type="primary">主要按钮</jy-button>
-  <jy-button type="success">成功按钮</jy-button>
-  <jy-button type="info">信息按钮</jy-button>
-  <jy-button type="warning">警告按钮</jy-button>
-  <jy-button type="danger">危险按钮</jy-button>
-</jy-row>
+<qw-row>
+  <qw-button>默认按钮</qw-button>
+  <qw-button type="primary">主要按钮</qw-button>
+  <qw-button type="success">成功按钮</qw-button>
+  <qw-button type="info">信息按钮</qw-button>
+  <qw-button type="warning">警告按钮</qw-button>
+  <qw-button type="danger">危险按钮</qw-button>
+</qw-row>
 
-<jy-row>
-  <jy-button plain>朴素按钮</jy-button>
-  <jy-button type="primary" plain>主要按钮</jy-button>
-  <jy-button type="success" plain>成功按钮</jy-button>
-  <jy-button type="info" plain>信息按钮</jy-button>
-  <jy-button type="warning" plain>警告按钮</jy-button>
-  <jy-button type="danger" plain>危险按钮</jy-button>
-</jy-row>
+<qw-row>
+  <qw-button plain>朴素按钮</qw-button>
+  <qw-button type="primary" plain>主要按钮</qw-button>
+  <qw-button type="success" plain>成功按钮</qw-button>
+  <qw-button type="info" plain>信息按钮</qw-button>
+  <qw-button type="warning" plain>警告按钮</qw-button>
+  <qw-button type="danger" plain>危险按钮</qw-button>
+</qw-row>
 
-<jy-row>
-  <jy-button round>圆角按钮</jy-button>
-  <jy-button type="primary" round>主要按钮</jy-button>
-  <jy-button type="success" round>成功按钮</jy-button>
-  <jy-button type="info" round>信息按钮</jy-button>
-  <jy-button type="warning" round>警告按钮</jy-button>
-  <jy-button type="danger" round>危险按钮</jy-button>
-</jy-row>
+<qw-row>
+  <qw-button round>圆角按钮</qw-button>
+  <qw-button type="primary" round>主要按钮</qw-button>
+  <qw-button type="success" round>成功按钮</qw-button>
+  <qw-button type="info" round>信息按钮</qw-button>
+  <qw-button type="warning" round>警告按钮</qw-button>
+  <qw-button type="danger" round>危险按钮</qw-button>
+</qw-row>
 
-<jy-row>
-  <jy-button icon="el-icon-search" circle></jy-button>
-  <jy-button type="primary" icon="el-icon-edit" circle></jy-button>
-  <jy-button type="success" icon="el-icon-check" circle></jy-button>
-  <jy-button type="info" icon="el-icon-message" circle></jy-button>
-  <jy-button type="warning" icon="el-icon-star-off" circle></jy-button>
-  <jy-button type="danger" icon="el-icon-delete" circle></jy-button>
-</jy-row>
+<qw-row>
+  <qw-button icon="qw-icon-search" circle></qw-button>
+  <qw-button type="primary" icon="qw-icon-edit" circle></qw-button>
+  <qw-button type="success" icon="qw-icon-check" circle></qw-button>
+  <qw-button type="info" icon="qw-icon-message" circle></qw-button>
+  <qw-button type="warning" icon="qw-icon-star-off" circle></qw-button>
+  <qw-button type="danger" icon="qw-icon-delete" circle></qw-button>
+</qw-row>
 ```
 
 :::
@@ -55,23 +66,23 @@
 :::demo 你可以使用`disabled`属性来定义按钮是否可用，它接受一个`Boolean`值。
 
 ```html
-<jy-row>
-  <jy-button disabled>默认按钮</jy-button>
-  <jy-button type="primary" disabled>主要按钮</jy-button>
-  <jy-button type="success" disabled>成功按钮</jy-button>
-  <jy-button type="info" disabled>信息按钮</jy-button>
-  <jy-button type="warning" disabled>警告按钮</jy-button>
-  <jy-button type="danger" disabled>危险按钮</jy-button>
-</jy-row>
+<qw-row>
+  <qw-button disabled>默认按钮</qw-button>
+  <qw-button type="primary" disabled>主要按钮</qw-button>
+  <qw-button type="success" disabled>成功按钮</qw-button>
+  <qw-button type="info" disabled>信息按钮</qw-button>
+  <qw-button type="warning" disabled>警告按钮</qw-button>
+  <qw-button type="danger" disabled>危险按钮</qw-button>
+</qw-row>
 
-<jy-row>
-  <jy-button plain disabled>朴素按钮</jy-button>
-  <jy-button type="primary" plain disabled>主要按钮</jy-button>
-  <jy-button type="success" plain disabled>成功按钮</jy-button>
-  <jy-button type="info" plain disabled>信息按钮</jy-button>
-  <jy-button type="warning" plain disabled>警告按钮</jy-button>
-  <jy-button type="danger" plain disabled>危险按钮</jy-button>
-</jy-row>
+<qw-row>
+  <qw-button plain disabled>朴素按钮</qw-button>
+  <qw-button type="primary" plain disabled>主要按钮</qw-button>
+  <qw-button type="success" plain disabled>成功按钮</qw-button>
+  <qw-button type="info" plain disabled>信息按钮</qw-button>
+  <qw-button type="warning" plain disabled>警告按钮</qw-button>
+  <qw-button type="danger" plain disabled>危险按钮</qw-button>
+</qw-row>
 ```
 
 :::
@@ -83,8 +94,8 @@
 :::demo
 
 ```html
-<jy-button type="text">文字按钮</jy-button>
-<jy-button type="text" disabled>文字按钮</jy-button>
+<qw-button type="text">文字按钮</qw-button>
+<qw-button type="text" disabled>文字按钮</qw-button>
 ```
 
 :::
@@ -93,16 +104,37 @@
 
 带图标的按钮可增强辨识度（有文字）或节省空间（无文字）。
 
-:::demo 设置`icon`属性即可，icon 的列表可以参考 Element 的 icon 组件，也可以设置在文字右边的 icon ，只要使用`i`标签即可，可以使用自定义图标。
+:::demo 设置`icon`属性即可，icon 的列表可以参考 Quickwork 的 icon 组件，也可以设置在文字右边的 icon ，只要使用`i`标签即可，可以使用自定义图标。
 
 ```html
-<jy-button type="primary" icon="el-icon-edit"></jy-button>
-<jy-button type="primary" icon="el-icon-share"></jy-button>
-<jy-button type="primary" icon="el-icon-delete"></jy-button>
-<jy-button type="primary" icon="el-icon-search">搜索</jy-button>
-<jy-button type="primary">上传<i class="el-icon-upload el-icon--right"></i></jy-button>
+<qw-button type="primary" icon="qw-icon-edit"></qw-button>
+<qw-button type="primary" icon="qw-icon-share"></qw-button>
+<qw-button type="primary" icon="qw-icon-delete"></qw-button>
+<qw-button type="primary" icon="qw-icon-search">搜索</qw-button>
+<qw-button type="primary">上传<i class="qw-icon-upload qw-icon--right"></i></qw-button>
 ```
+:::
 
+### 不同尺寸
+
+Button 组件提供除了默认值以外的三种尺寸，可以在不同场景下选择合适的按钮尺寸。
+
+:::demo 额外的尺寸：`medium`、`small`、`mini`，通过设置`size`属性来配置它们。
+
+```html
+<qw-row>
+  <qw-button>默认按钮</qw-button>
+  <qw-button size="medium">中等按钮</qw-button>
+  <qw-button size="small">小型按钮</qw-button>
+  <qw-button size="mini">超小按钮</qw-button>
+</qw-row>
+<qw-row>
+  <qw-button round>默认按钮</qw-button>
+  <qw-button size="medium" round>中等按钮</qw-button>
+  <qw-button size="small" round>小型按钮</qw-button>
+  <qw-button size="mini" round>超小按钮</qw-button>
+</qw-row>
+```
 :::
 
 ### Attributes

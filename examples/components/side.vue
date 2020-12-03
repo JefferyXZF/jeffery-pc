@@ -1,8 +1,8 @@
 <template>
-  <div class="jy-doc-side"
+  <div class="qw-doc-side"
        :style="style">
     <ul>
-      <li class="jy-doc-side__item"
+      <li class="qw-doc-side__item"
           v-for="(item, index) in data"
           :key="index">
         <a v-if="!item.path">{{item.name}}</a>
@@ -13,7 +13,7 @@
                      v-text="item.title || item.name">
         </router-link>
         <ul v-if="item.children">
-          <li class="jy-doc-side__item"
+          <li class="qw-doc-side__item"
               v-for="(value, key) in item.children"
               :key="key">
             <router-link :to="base + value.path"
@@ -24,9 +24,9 @@
         <template v-if="item.groups">
           <div v-for="(group, key) in item.groups"
                :key="key">
-            <div class="jy-doc-side__nav-group-title">{{group.groupName}}</div>
-            <ul class="jy-doc-side__pure-menu-list">
-              <li class="jy-doc-side__item"
+            <div class="qw-doc-side__nav-group-title">{{group.groupName}}</div>
+            <ul class="qw-doc-side__pure-menu-list">
+              <li class="qw-doc-side__item"
                   v-for="(navItem, key) in group.list"
                   v-if="!navItem.disabled"
                   :key="key">
@@ -45,7 +45,7 @@
 
 <script>
 export default {
-  name: "side",
+  name: "MainSide",
 
   props: {
     data: Array,
@@ -88,12 +88,12 @@ export default {
 <style lang="scss">
 @import "../assets/styles/variable.scss";
 
-.jy-doc-side {
+.qw-doc-side {
   width: 240px;
   box-sizing: border-box;
   transition: opacity 0.3s;
   position: fixed;
-  border-right: 1px solid $jy-doc-border-color;
+  border-right: 1px solid $qw-doc-border-color;
   padding: 25px 0;
 
   ul {
@@ -117,14 +117,14 @@ export default {
       position: relative;
       transition: 0.15s ease-out;
       font-weight: 700;
-      padding: 10px calc(#{$jy-doc-padding}/ 2) 10px $jy-doc-padding;
+      padding: 10px calc(#{$qw-doc-padding}/ 2) 10px $qw-doc-padding;
       box-sizing: border-box;
       &.active {
         color: #409eff;
       }
     }
 
-    .jy-doc-side__item {
+    .qw-doc-side__item {
       a {
         display: block;
         height: 40px;
@@ -144,11 +144,11 @@ export default {
       }
     }
 
-    .jy-doc-side__nav-group-title {
+    .qw-doc-side__nav-group-title {
       font-size: 12px;
       line-height: 40px;
-      padding-left: $jy-doc-padding;
-      color: $jy-doc-text-light-blue;
+      padding-left: $qw-doc-padding;
+      color: $qw-doc-text-light-blue;
     }
   }
 

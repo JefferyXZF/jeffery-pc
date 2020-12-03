@@ -1,17 +1,17 @@
 <template>
-  <div :class="['jy-demo-block', blockClass, { 'hover': hovering }]"
+  <div :class="['qw-demo-block', blockClass, { 'hover': hovering }]"
        @mouseenter="hovering = true"
        @mouseleave="hovering = false">
     <slot name="source"></slot>
-    <div class="jy-demo-block__meta"
+    <div class="qw-demo-block__meta"
          ref="meta">
-      <div class="jy-demo-block__meta-description"
+      <div class="qw-demo-block__meta-description"
            v-if="$slots.default">
         <slot></slot>
       </div>
       <slot name="highlight"></slot>
     </div>
-    <div class="jy-demo-block__control"
+    <div class="qw-demo-block__control"
          ref="control"
          :class="{ 'is-fixed': fixedControl }"
          @click="isExpanded = !isExpanded">
@@ -30,7 +30,7 @@ import componentLang from "../i18n/component.json";
 import { version } from "main/index.js";
 
 export default {
-  name: "demo-block",
+  name: "DemoBlock",
   data() {
     return {
       hovering: false,
@@ -56,17 +56,17 @@ export default {
     },
 
     codeArea() {
-      return this.$el.getElementsByClassName("jy-demo-block__meta")[0];
+      return this.$el.getElementsByClassName("qw-demo-block__meta")[0];
     },
 
     codeAreaHeight() {
       if (
-        this.$el.getElementsByClassName("jy-demo-block__meta-description")
+        this.$el.getElementsByClassName("qw-demo-block__meta-description")
           .length > 0
       ) {
         return (
           this.$el.getElementsByClassName(
-            "jy-demo-block__meta-description"
+            "qw-demo-block__meta-description"
           )[0].clientHeight +
           this.$el.getElementsByClassName("highlight")[0].clientHeight +
           20
@@ -76,7 +76,7 @@ export default {
     },
 
     iconClass() {
-      return this.isExpanded ? "jy-icon-caret-top" : "jy-icon-caret-bottom";
+      return this.isExpanded ? "qw-icon-caret-top" : "qw-icon-caret-bottom";
     },
 
     blockClass() {
@@ -103,7 +103,7 @@ export default {
     this.$nextTick(() => {
       let highlight = this.$el.getElementsByClassName("highlight")[0];
       if (
-        this.$el.getElementsByClassName("jy-demo-block__meta-description")
+        this.$el.getElementsByClassName("qw-demo-block__meta-description")
           .length === 0
       ) {
         highlight.style.width = "100%";
@@ -130,7 +130,7 @@ export default {
 </script>
 
 <style lang="scss">
-.jy-demo-block {
+.qw-demo-block {
   border: solid 1px #ebebeb;
   border-radius: 3px;
   transition: 0.2s;

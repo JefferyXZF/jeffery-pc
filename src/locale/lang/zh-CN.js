@@ -1,5 +1,5 @@
 export default {
-  jy: {
+  qw: {
     tree: {
       emptyText: '暂无数据'
     }

@@ -17,7 +17,6 @@ const Files = [
     filename: 'index.js',
     content: `import ${ComponentName} from './src/main';
 
-/* istanbul ignore next */
 ${ComponentName}.install = function(Vue) {
   Vue.component(${ComponentName}.name, ${ComponentName});
 };
@@ -27,12 +26,12 @@ export default ${ComponentName};`
   {
     filename: 'src/main.vue',
     content: `<template>
-  <div class="jy-${componentname}"></div>
+  <div class="qw-${componentname}"></div>
 </template>
 
 <script>
 export default {
-  name: 'jy${ComponentName}'
+  name: 'qw${ComponentName}'
 };
 </script>`
   },

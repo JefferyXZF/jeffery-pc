@@ -1,16 +1,16 @@
 <template>
-  <div class="jy-doc-header">
-    <router-link class="jy-doc-header__logo"
+  <div class="qw-doc-header">
+    <router-link class="qw-doc-header__logo"
                  to="/">
       <img src="../assets/images/logo.png">
       <span>{{langConfig.title}}</span>
       <span v-if="version"
-            class="jy-doc-header__version">v{{ version }}</span>
+            class="qw-doc-header__version">v{{ version }}</span>
     </router-link>
-    <ul class="jy-doc-header__nav">
-      <li class="jy-doc-header__nav-item">{{langConfig.phone}}</li>
-      <li class="jy-doc-header__nav-item active">{{langConfig.web}}</li>
-      <li class="jy-doc-header__nav-lang"
+    <ul class="qw-doc-header__nav">
+      <li class="qw-doc-header__nav-item">{{langConfig.phone}}</li>
+      <li class="qw-doc-header__nav-item active">{{langConfig.web}}</li>
+      <li class="qw-doc-header__nav-lang"
           @click="switchLang">{{displayedLang}}</li>
       <li>
         <svg height="28"
@@ -32,6 +32,7 @@ import { version } from "main/index.js";
 import componentLang from "../i18n/component.json";
 
 export default {
+  name: 'MainHeader',
   data() {
     return {
       version,
@@ -72,16 +73,16 @@ export default {
 <style lang="scss">
 @import "../assets/styles/variable.scss";
 
-.jy-doc-header {
+.qw-doc-header {
   width: 100%;
   user-select: none;
-  border-bottom: 1px solid $jy-doc-border-color;
+  border-bottom: 1px solid $qw-doc-border-color;
   display: flex;
   align-items: center;
   background-color: #fff;
-  padding: 0 $jy-doc-padding;
-  height: $jy-doc-header-height;
-  line-height: $jy-doc-header-height;
+  padding: 0 $qw-doc-padding;
+  height: $qw-doc-header-height;
+  line-height: $qw-doc-header-height;
   box-sizing: border-box;
 
   &__logo {
@@ -100,12 +101,12 @@ export default {
 
     span {
       font-size: 22px;
-      color: $jy-doc-black;
+      color: $qw-doc-black;
       font-family: "Dosis", "Source Sans Pro", "Helvetica Neue", Arial,
         sans-serif;
     }
 
-    .jy-doc-header__version {
+    .qw-doc-header__version {
       font-size: 90%;
       padding-top: 7px;
       opacity: 0.7;
@@ -127,25 +128,25 @@ export default {
       cursor: pointer;
 
       svg {
-        fill: $jy-doc-code-color;
+        fill: $qw-doc-code-color;
         display: block;
         transition: 0.3s ease-in-out;
 
         &:hover {
-          fill: $jy-doc-blue;
+          fill: $qw-doc-blue;
         }
       }
     }
 
     &-item {
       font-size: 15px;
-      color: $jy-doc-text-color;
+      color: $qw-doc-text-color;
       border-bottom: 1px solid transparent;
       transition: 0.3s ease-in-out;
 
       &:hover,
       &.active {
-        color: $jy-doc-blue;
+        color: $qw-doc-blue;
         border-bottom-color: #19b5fe;
       }
     }
@@ -157,13 +158,13 @@ export default {
       display: block;
       border-radius: 3px;
       text-align: center;
-      color: $jy-doc-code-color;
+      color: $qw-doc-code-color;
       border: 1px solid currentColor;
       font-family: "Helvetica Neue", Arial, sans-serif;
       transition: 0.3s ease-in-out;
 
       &:hover {
-        color: $jy-doc-blue;
+        color: $qw-doc-blue;
       }
     }
   }

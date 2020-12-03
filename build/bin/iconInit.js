@@ -10,7 +10,7 @@ let classList = [];
 
 nodes.forEach((node) => {
   let selector = node.selector || '';
-  let reg = new RegExp(/\.jy-icon-([^:]+):before/);
+  let reg = new RegExp(/\.qw-icon-([^:]+):before/);
   let arr = selector.match(reg);
 
   if (arr && arr[1]) {

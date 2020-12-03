@@ -34,7 +34,7 @@ const install = function(Vue, opts = {}) {
     Vue.component(component.name, component);
   });
 
-  Vue.prototype.$JYUI = {
+  Vue.prototype.$QUICKWORK = {
     size: opts.size || '',
     zIndex: opts.zIndex || 2000
   };

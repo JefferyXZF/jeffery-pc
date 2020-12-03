@@ -2,14 +2,12 @@
 
 import Button from '../packages/button/index.js';
 import Row from '../packages/row/index.js';
-import Picker from '../packages/picker/index.js';
 import locale from 'jeffery-ui/src/locale';
 import CollapseTransition from 'jeffery-ui/src/transitions/collapse-transition';
 
 const components = [
   Button,
   Row,
-  Picker,
   CollapseTransition
 ];
 
@@ -21,7 +19,7 @@ const install = function(Vue, opts = {}) {
     Vue.component(component.name, component);
   });
 
-  Vue.prototype.$JYUI = {
+  Vue.prototype.$QUICKWORK = {
     size: opts.size || '',
     zIndex: opts.zIndex || 2000
   };
@@ -40,8 +38,7 @@ module.exports = {
   install,
   CollapseTransition,
   Button,
-  Row,
-  Picker
+  Row
 };
 
 module.exports.default = module.exports;

@@ -36,11 +36,11 @@ export default {
   render(h) {
     return h(this.tag, {
       class: [
-        'jy-row',
+        'qw-row',
         this.justify !== 'start' ? `is-justify-${this.justify}` : '',
         this.align !== 'top' ? `is-align-${this.align}` : '',
         {
-          'jy-row--flex': this.type === 'flex'
+          'qw-row--flex': this.type === 'flex'
         }
       ],
       style: this.style
