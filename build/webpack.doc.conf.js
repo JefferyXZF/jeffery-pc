@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
@@ -29,9 +28,9 @@ function wrap(render) {
 
 const webpackConfig = {
   entry: isProd ? {
-    docs: './examples/entry.js',
+    docs: './examples/index.js',
     'jeffery-ui': './src/index.js'
-  } : './examples/entry.js',
+  } : './examples/index.js',
   output: {
     path: path.resolve(process.cwd(), './lib-doc/'),
     publicPath: process.env.CI_ENV || '',

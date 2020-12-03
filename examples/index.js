@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Jyui from 'main/index.js';
 import 'packages/theme/src/index.scss';
-import entry from './app';
+import App from './app';
 import VueRouter from 'vue-router';
 import routes from './route.config';
 import title from './i18n/title.json';
@@ -34,6 +34,6 @@ router.afterEach(route => {
 
 // eslint-disable-line
 new Vue({
-  render: h => h(entry),
+  render: h => h(App),
   router
 }).$mount('#app');
