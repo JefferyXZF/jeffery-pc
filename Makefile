@@ -4,7 +4,7 @@ default: help
 install:
 	npm run bootstrap
 
-dev:
+dev: install
 	npm run dev
 
 new:

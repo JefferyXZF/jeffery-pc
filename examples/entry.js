@@ -32,7 +32,8 @@ router.afterEach(route => {
   document.title = 'DO1 CLOUD|QUICK WORK';
 });
 
-new Vue({ // eslint-disable-line
+// eslint-disable-line
+new Vue({
   render: h => h(entry),
   router
 }).$mount('#app');

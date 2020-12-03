@@ -34,5 +34,17 @@
 - 第一个字母小写
 - 结尾不加句号（.）
 ```
+</details>
 
+<details>
+
+<summary>依赖库 安装规范</summary>
+
+为了维护 `yarn.lock` 文件进行版本锁定，所以**新增依赖**只能使用 `yarn` 进行安装，若没有该工具，使用如下命令安装
+
+```shell
+npm install -g yarn
+```
+
+**安装依赖**也尽量使用 `yarn`，也可以使用 `npm` 或 `cnpm`
 </details>
