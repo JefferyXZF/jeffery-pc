@@ -2,12 +2,14 @@
 
 import Button from '../packages/button/index.js';
 import Row from '../packages/row/index.js';
+import Icon from '../packages/icon/index.js';
 import locale from 'jeffery-ui/src/locale';
 import CollapseTransition from 'jeffery-ui/src/transitions/collapse-transition';
 
 const components = [
   Button,
   Row,
+  Icon,
   CollapseTransition
 ];
 
@@ -38,7 +40,8 @@ module.exports = {
   install,
   CollapseTransition,
   Button,
-  Row
+  Row,
+  Icon
 };
 
 module.exports.default = module.exports;

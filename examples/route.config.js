@@ -45,7 +45,6 @@ const registerRoute = (navConfig) => {
       children: []
     });
     navs.forEach(nav => {
-      if (nav.href) return;
       if (nav.groups) {
         nav.groups.forEach(group => {
           group.list.forEach(nav => {

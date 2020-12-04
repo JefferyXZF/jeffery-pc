@@ -1,8 +1,6 @@
 export default {
-  name: 'jyRow',
-
-  componentName: 'jyRow',
-
+  name: 'QwRow',
+  componentName: 'QwRow',
   props: {
     tag: {
       type: String,
@@ -19,20 +17,16 @@ export default {
       default: 'top'
     }
   },
-
   computed: {
     style() {
       const ret = {};
-
       if (this.gutter) {
         ret.marginLeft = `-${this.gutter / 2}px`;
         ret.marginRight = ret.marginLeft;
       }
-
       return ret;
     }
   },
-
   render(h) {
     return h(this.tag, {
       class: [

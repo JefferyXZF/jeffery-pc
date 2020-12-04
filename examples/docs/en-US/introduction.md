@@ -1,6 +1,7 @@
 <template>
   <div class="introduction-container">
-    <p>DO1|Quickwork web component library base on Vue</p>
+    <img src="../../assets/images/logo.png" />
+    <p>Jeffery-UI web component library base on Vue</p>
   </div>
 </template>
 

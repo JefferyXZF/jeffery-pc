@@ -1,7 +1,7 @@
-import jyButton from './src/button';
+import Button from './src/button';
 
-jyButton.install = function(Vue) {
-  Vue.component(jyButton.name, jyButton);
+Button.install = function(Vue) {
+  Vue.component(Button.name, Button);
 };
 
-export default jyButton;
+export default Button;

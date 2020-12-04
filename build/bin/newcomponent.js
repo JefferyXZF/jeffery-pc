@@ -45,10 +45,11 @@ export default {
   },
   {
     filename: path.join('../../packages/theme/src', `${componentname}.scss`),
-    content: `@import "mixins/mixins.scss";
-@import "common/variable.scss";
+    content: `@import "./common/variable.scss";
+    @import "./mixins/mixins.scss";
 
-@include b(${componentname}) {
+
+@include bem(${componentname}) {
 }`
   }
 ];

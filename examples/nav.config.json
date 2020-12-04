@@ -12,8 +12,24 @@
           "name": "介绍"
         },
         {
+          "path": "/installation",
+          "name": "安装"
+        },
+        {
           "path": "/quickstart",
           "name": "快速上手"
+        },
+        {
+          "path": "/i18n",
+          "name": "国际化"
+        },
+        {
+          "path": "/style-guide",
+          "name": "风格指南"
+        },
+        {
+          "path": "/contribution",
+          "name": "贡献代码"
         }
       ]
     },
@@ -28,8 +44,8 @@
               "title": "Button 按钮"
             },
             {
-              "path": "/picker",
-              "title": "Picker 选择器"
+              "path": "/icon",
+              "title": "Icon 图标"
             }
           ]
         }
@@ -49,8 +65,24 @@
           "name": "Introduction"
         },
         {
+          "path": "/installation",
+          "name": "Installation"
+        },
+        {
           "path": "/quickstart",
           "name": "Quickstart"
+        },
+        {
+          "path": "/i18n",
+          "name": "Internationalization"
+        },
+        {
+          "path": "/style-guide",
+          "name": "StyleGuide"
+        },
+        {
+          "path": "/contribution",
+          "name": "Contribution"
         }
       ]
     },
@@ -65,8 +97,8 @@
               "title": "Button"
             },
             {
-              "path": "/picker",
-              "title": "Picker"
+              "path": "/icon",
+              "title": "Icon"
             }
           ]
         }
